@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Builds and releases
+build/
+dist/
+dist_release/
+release/
+release_work/
+*.spec
+*.zip
+
+# Runtime state and diagnostics
+*.log
+settings.json
+diagnostic_logs/
+.abcopy-*
+
+# Local tools: repository keeps instructions and licenses, not executables
+tools/ffmpeg/bin/*.exe
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

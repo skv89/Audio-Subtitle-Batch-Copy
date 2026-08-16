@@ -1,0 +1,52 @@
+Audio and Subtitle Batch Copy 1.2.2 — Third-Party Notices
+======================================================================
+
+FFmpeg 9.0 essentials build
+---------------------------
+The portable Windows package includes separate ffmpeg.exe and ffprobe.exe
+programs from the FFmpeg 9.0 essentials build published by Gyan Doshi. FFmpeg
+is licensed under GNU GPL version 3 in this build. The complete license and the
+build's original README are included at:
+
+  tools\ffmpeg\licenses\FFMPEG_GPLv3_LICENSE.txt
+  tools\ffmpeg\FFMPEG_BUILD_README.txt
+
+Upstream source tag: https://github.com/FFmpeg/FFmpeg/tree/n9.0
+Official source archive: https://ffmpeg.org/releases/ffmpeg-9.0.tar.xz
+Windows build page (linked by FFmpeg.org): https://www.gyan.dev/ffmpeg/builds/
+Downloaded archive SHA-256:
+  e6b54767a6065919048f1a098eb27211ca4e12b4348a05d88777a5855d0b6e71
+
+PySide6 / Qt for Python 6.11.1 and Qt 6.11.1
+--------------------------------------------
+The executable uses dynamically linked PySide6 and Qt libraries. The open
+source distribution is available under LGPL version 3; the license text is
+included under licenses\QT_LGPL_3_0.txt.
+
+Project: https://doc.qt.io/qtforpython-6/
+Source: https://code.qt.io/cgit/pyside/pyside-setup.git/
+
+Python 3.13
+-----------
+The executable embeds Python. The Python Software Foundation license is
+included under licenses\PYTHON_LICENSE.txt.
+
+Source: https://www.python.org/downloads/source/
+
+PyInstaller 6.21.0
+------------------
+The executable is packaged with PyInstaller. Its GPL license with the special
+exception for distributing bundled applications is included under
+licenses\PYINSTALLER_LICENSE.txt.
+
+Source: https://github.com/pyinstaller/pyinstaller
+
+Liberation Sans
+---------------
+Liberation Sans Regular and Bold are embedded to make text rendering reliable
+in portable and headless environments. They are licensed under the SIL Open
+Font License 1.1. The license is included at:
+
+  assets\fonts\LIBERATION_FONTS_LICENSE.txt
+
+Source: https://github.com/liberationfonts/liberation-fonts

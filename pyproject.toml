@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-subtitle-batch-copy"
+version = "1.2.4"
+description = "Batch-copy audio and subtitle streams into destination videos without re-encoding."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Audio and Subtitle Batch Copy contributors" }]
+dependencies = ["PySide6>=6.11,<7"]
+
+[project.gui-scripts]
+audio-subtitle-batch-copy = "audio_subtitle_batch_copy.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+qt_api = "pyside6"
+pythonpath = ["src"]
+markers = ["integration: exercises the bundled FFmpeg/ffprobe binaries"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["audio_subtitle_batch_copy"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["PySide6.*"]
+ignore_missing_imports = true
